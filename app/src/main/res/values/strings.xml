@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CalcApp</string>
+    <string name="resultKey">Result</string>
+    <string name="plusSign">+</string>
+    <string name="minusSign">-</string>
+    <string name="asteriskSign">*</string>
+    <string name="slashSign">/</string>
+    <string name="noInput">いずれかのエディットテキストエリア内に入力がありません。</string>
+    <string name="invalidInputValue">いずれかのエディットテキストエリア内に数値以外が入力されています。</string>
+    <string name="leftOperand">LeftOperand</string>
+    <string name="rightOperand">RightOperand</string>
+</resources>
