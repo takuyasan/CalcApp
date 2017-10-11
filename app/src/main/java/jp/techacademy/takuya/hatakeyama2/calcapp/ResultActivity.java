@@ -1,10 +1,11 @@
 package jp.techacademy.takuya.hatakeyama2.calcapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import java.math.BigDecimal;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -14,8 +15,8 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
         Intent intent = getIntent();
-        double result = intent.getDoubleExtra(getString(R.string.resultKey), 0.0);
+        BigDecimal result = (BigDecimal) intent.getSerializableExtra(getString(R.string.resultKey));
         TextView resultView = (TextView) findViewById(R.id.resultView);
-        resultView.setText(String.valueOf(result));
+        resultView.setText(result.toString());
     }
 }

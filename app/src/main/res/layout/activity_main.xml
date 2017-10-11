@@ -16,13 +16,14 @@
             android:id="@+id/leftOperand"
             android:layout_width="match_parent"
             android:layout_height="50sp"
-
+            android:inputType="numberDecimal"
             android:hint="@string/leftOperand" />
 
         <EditText
             android:id="@+id/rightOperand"
             android:layout_width="match_parent"
             android:layout_height="50sp"
+            android:inputType="numberDecimal"
             android:hint="@string/rightOperand" />
 
     </LinearLayout>
